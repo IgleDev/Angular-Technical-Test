@@ -1,0 +1,27 @@
+<h1>Libreria Midu</h1>
+<div class="books">
+
+  <div *ngIf="selectBooks.length > 0" class="librery">
+    <h2>Libros Seleccionados : {{ selectBooks.length }}</h2>
+    <div class="books-all">
+      <div *ngFor="let selectedBook of selectBooks" class="books-list">
+        <img src="{{ selectedBook.book.cover }}" title="{{ selectedBook.book.title }}">
+        <div class="button">
+          <button (click)="removeBook(selectedBook)">Eliminar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="librery">
+    <h2>Libros Disponibles : {{ booksData.library.length }}</h2>
+    <div class="books-all">
+        <div *ngFor="let books of booksData.library" class="books-list">
+          <img src="{{ books.book.cover }}" title="{{ books.book.title }}">
+          <div class="button">
+            <button (click)="selectBook(books)">Añadir</button>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

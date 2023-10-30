@@ -1,0 +1,119 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+h1{
+    padding: 2%;
+    color: white;
+    font-size: 64px;
+    text-align: center;
+    font: oblique bold 500% cursive;
+}
+
+.filter {
+    gap: 30px; 
+    color: white;
+    display: flex;
+    margin-left: 10%;
+    flex-direction: row;
+    justify-content: start;
+    font: oblique bold 120% cursive;
+}
+  
+.filter-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-item p{
+    padding-bottom: 5%;
+}
+
+input[type="range"] {
+    height: 1%;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #7fffd4;
+    cursor: pointer;
+}
+
+select option{
+    font: oblique bold 120% cursive;
+}
+
+.books{
+    padding: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.books .librery{
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    background-color: #0d131b;
+}
+
+.books .librery h2{
+    color: white;
+    line-height: 120px;
+    text-align: center;
+    font: oblique bold 100% cursive;
+}
+
+.books .librery h2{
+    text-align: center;
+    font: oblique bold 160% cursive;
+}
+
+.books .books-all{
+    gap: 20px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(3 , 1fr);
+}
+
+.books .books-list img{
+    width: 80%;
+    margin: 10%;
+    cursor: pointer;
+}
+
+.books .books-list img:hover{
+    box-shadow: 0 0 10px #313131;
+}
+
+.books .librery:hover{
+    box-shadow: 0 0 10px #313131;
+}
+
+.books .librery .button{
+    text-align: center;
+}
+
+.books .librery .button button{
+    padding: 2%;
+    color: #ffffff;
+    cursor: pointer;
+    padding-left: 25%;
+    padding-right: 25%;
+    border: 1px transparent;
+    background-color: #151f2d;
+    font: oblique bold 100% cursive;
+}
+
+.books .librery .button button:hover{
+    box-shadow: 0 0 30px #151f2d;
+}
